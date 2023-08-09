@@ -1,0 +1,51 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+
+#root {
+  background-image: url(https://lumiere-a.akamaihd.net/v1/images/background-stars-desktop_v2_96b6d74a.jpeg?region=0%2C0%2C2048%2C1600);
+  background-position: center top;
+  background-repeat: repeat;
+  min-height: 100vh;
+
+  & h1 {
+    color: #ffc501;
+    font-family: 'Star Wars', sans-serif;
+  }
+
+  & .nav {
+    font-size: 25px;
+  }
+
+  & a {
+    color: #ffc501;
+    text-decoration: none;
+    transition: 0.3s;
+
+    &:hover {
+      color: #ffe385;
+    }
+  }
+
+  & .list-group-flush {
+    background: linear-gradient(
+      109.6deg,
+      rgb(36, 45, 57) 11.2%,
+      rgb(16, 37, 60) 51.2%,
+      rgb(0, 0, 0) 98.6%
+    );
+  }
+
+  & .page-item.active .page-link {
+    color: #000 !important;
+    background-color: #ffd64e !important;
+    border-color: #ffd64e;
+    box-shadow:
+      0 0 15px #ffd64e,
+      inset 0 0 15px #ffd64e;
+  }
+
+  & .pagination {
+    & a {
+      color: #000;
+    }
+  }
+}
